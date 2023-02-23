@@ -1,32 +1,64 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/"></router-link>
     </nav>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+p {
   text-align: center;
-  color: #2c3e50;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5px;
 }
 
-nav {
-  padding: 30px;
+.wallpapers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  flex-wrap: wrap;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.wallpapers a {
+  background-color: #bbcacb;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+img {
+  height: 170px;
+  width: 280px;
+  margin: 2px;
+}
+
+.image {
+  padding: 10px;
+}
+
+a {
+  margin-left: 130px;
+  color: rgb(64, 62, 62);
+  padding: 9px 25px;
+  border-radius: 50px;
+}
+
+.downloadButton {
+  margin-top: 15px;
+  border: none;
+  background-color: #bbcacb;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  justify-content: center;
+}
+
+a:hover {
+  background-color: #909999;
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  background-color: #909999;
+  cursor: pointer;
 }
 </style>
